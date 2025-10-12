@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhiren Gangani | Career Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <img src="images/Dhiren_Gangani.JPG" alt="Dhiren Gangani" class="profile-pic" />
+      <h1>Dhiren Gangani</h1>
+      <p class="tagline">Oracle BI & Analytics Consultant</p>
+      <a href="#about" class="cta-button">Explore My Journey</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#knowledge">Knowledge Base</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>With over 7 years of experience in IT, I specialize in Oracle Data Integrator, OAC, OBIEE, and more. I’ve led teams, built dashboards, and earned multiple awards for excellence.</p>
+    </section>
+    <section id="timeline">
+        <h2>Career Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Oracle</h3>
+                <span>Nov 2022 – Present</span>
+                <p>FDI & OAC Consultant — Led multiple projects including Amplifon, ENI, SBI, and RISL with advanced
+                    analytics and dashboard development.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Tata Technologies</h3>
+                <span>Jun 2021 – Nov 2022</span>
+                <p>OAC Developer — Supported ELT and OAC development for Honda Vietnam, including SQL procedures and ODI
+                    enhancements.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>L&T Infotech (LTI)</h3>
+                <span>Sep 2018 – Jun 2021</span>
+                <p>OBIEE & ODI Consultant — Delivered BI solutions, handled Informatica and OBIEE environments, and led
+                    Synonym Switch project.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-card">Amplifon – Fusion Data Intelligence</div>
+      <div class="project-card">ENI – Contract Generation App</div>
+      <div class="project-card">SBI – OAC-OARM Dashboard</div>
+    <div class="project-grid">
+  <div class="project-card">
+    <h3>Amplifon – Fusion Data Intelligence</h3>
+    <p><strong>Role:</strong> FDI Consultant</p>
+    <p><strong>Tools:</strong> Fusion Data Intelligence, ADW</p>
+    <p>Built dashboards for HCM Workforce, developed SQL views, KPI logic, and led UAT.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>ENI – Contract Generation App</h3>
+    <p><strong>Role:</strong> OAC Consultant</p>
+    <p><strong>Tools:</strong> OAC Publisher, Oracle DB</p>
+    <p>Led reporting efforts for 70+ contract templates using employee data from HCM.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>SBI – OAC-OARM Dashboard</h3>
+    <p><strong>Role:</strong> OAC Consultant</p>
+    <p><strong>Tools:</strong> OAS, ODI, Oracle DB</p>
+    <p>Developed dashboards and ELT pipeline to extract insights from OARM.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>RISL – IFMS 3.0 Migration</h3>
+    <p><strong>Role:</strong> ODI Consultant</p>
+    <p><strong>Tools:</strong> ODI, GoldenGate, PL/SQL</p>
+    <p>Led data migration and module development; mentored team and supported hiring.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Honda Vietnam – ELT & OAC Support</h3>
+    <p><strong>Role:</strong> OAC Developer</p>
+    <p><strong>Tools:</strong> OAC, ODI, ADW, SQL</p>
+    <p>Handled daily tickets, built ODI objects, and enhanced BI reports.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>ASG – OBIEE & ETL Support</h3>
+    <p><strong>Role:</strong> OBIEE Consultant</p>
+    <p><strong>Tools:</strong> OBIEE, Apex, Informatica, ODI</p>
+    <p>Maintained RPD, fixed catalog issues, and optimized BI performance.</p>
+  </div>
+</div>
+    </section>
+    <section id="knowledge">
+        <h2>Knowledge Base</h2>
+        <p>Explore my daily learnings, technical notes, and insights from the field.</p>
+        <div class="knowledge-list">
+            <div class="knowledge-entry">
+                <h3>Optimizing ODI Mappings for Performance</h3>
+                <span class="entry-meta">02 Oct 2025 · #ODI #Performance</span>
+                <p>Learned how to reduce load time by restructuring mappings and using reusable components. Also explored
+                    parallel execution strategies.</p>
+            </div>
+
+            <div class="knowledge-entry">
+                <h3>Using Chart.js for Skill Visualization</h3>
+                <span class="entry-meta">01 Oct 2025 · #JavaScript #ChartJS</span>
+                <p>Integrated radar charts to show skill proficiency. Learned how to customize axes, colors, and tooltips
+                    for better UX.</p>
+            </div>
+
+            <div class="knowledge-entry">
+                <h3>Fusion Analytics: Creating Custom Measures</h3>
+                <span class="entry-meta">30 Sep 2025 · #FDI #Analytics</span>
+                <p>Explored how to build custom KPIs using SQL views and SME extensions. Documented best practices for
+                    dashboard alignment.</p>
+            </div>
+        </div>
+    </section>
+<section id="skills" class="section">
+  <h2 class="section-title">Skill Chart</h2>
+  <div class="chart-wrapper">
+    <canvas id="skillChart" width="600" height="400"></canvas>
+    <div class="icon-overlay" id="iconOverlay"></div>
+  </div>
+</section>
+
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: dhireng110@gmail.com</p>
+      <p>LinkedIn | GitHub | Resume</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Dhiren Gangani. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

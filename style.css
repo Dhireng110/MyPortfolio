@@ -1,0 +1,260 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #0078D7;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.profile-pic {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: white;
+  color: #0078D7;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  background-color: #005a9e;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.project-card {
+  background-color: #e6f0ff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+#timeline {
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+
+.timeline {
+  border-left: 3px solid #0078D7;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: #0078D7;
+  border-radius: 50%;
+}
+
+.timeline-item h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #0078D7;
+}
+
+.timeline-item span {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.timeline-item p {
+  margin-top: 5px;
+  font-size: 1em;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #0078D7;
+}
+
+.project-card p {
+  margin: 8px 0;
+  font-size: 0.95em;
+}
+.knowledge-list {
+  margin-top: 20px;
+}
+
+.knowledge-entry {
+  background-color: #fff;
+  border-left: 4px solid #0078D7;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 6px;
+}
+
+.knowledge-entry h3 {
+  margin: 0;
+  color: #0078D7;
+}
+
+.entry-meta {
+  font-size: 0.85em;
+  color: #666;
+  display: block;
+  margin: 5px 0 10px;
+}
+
+.knowledge-entry p {
+  margin: 0;
+  font-size: 0.95em;
+}
+#skills {
+  padding: 40px 20px;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+#skills canvas {
+  margin-top: 20px;
+  max-width: 100%;
+}
+.chart-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icon-list li {
+  margin: 20px 0;
+}
+
+.icon-list img {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+.chart-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.icon-column {
+  display: grid;
+  grid-template-rows: repeat(5, 50px); /* match bar height */
+  justify-items: end; /* align icons to the right edge */
+  align-items: center;
+  padding-right: 10px; /* spacing between icon and chart */
+}
+.icon-column img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  background-color: #f0f0f0;
+   border: 1px solid red;
+}
+.chart-wrapper {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.icon-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  pointer-events: none;
+}
+
+.icon-label {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  left: -50px; /* try -45px or -40px if needed */
+}
+
+.icon-label img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+.icon-label span {
+  font-size: 12px;
+  color: #333;
+  font-weight: 500;
+}
