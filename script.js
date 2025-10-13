@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const ctx = document.getElementById('skillChart').getContext('2d');
   const iconOverlay = document.getElementById('iconOverlay');
 
-  const labels = ['ODI', 'OAC', 'OBIEE', 'Client', 'SQL'];
+  const labels = ['ODI', 'FDI', 'OBIEE', 'Clients', 'SQL'];
   const icons = [
     'images/odi.png',
     'images/analytics.png',
@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
     data: {
       labels: labels.map(() => ''), // hide default labels
       datasets: [{
-        data: [9, 9, 7, 8, 9],
+        data: [7, 7, 7, 9, 7],
         backgroundColor: 'rgba(0, 120, 215, 0.7)',
         borderRadius: 5
       }]

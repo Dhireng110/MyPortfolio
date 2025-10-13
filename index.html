@@ -10,68 +10,108 @@
 </head>
 <body>
   <header>
-    <div class="hero">
-      <img src="images/Dhiren_Gangani.JPG" alt="Dhiren Gangani" class="profile-pic" />
-      <h1>Dhiren Gangani</h1>
-      <p class="tagline">Oracle BI & Analytics Consultant</p>
-      <a href="#about" class="cta-button">Explore My Journey</a>
-    </div>
+   <section class="hero-header">
+  <div class="hero-content">
+    <h1>Dhiren Gangani</h1>
+    <h2>Oracle Analytics Consultant & AI Generalist</h2>
+    <p class="tagline">Turning data into Insights. Designing clarity into every dashboard.</p>
+    <button class="cta-button" onclick="document.getElementById('career').scrollIntoView({ behavior: 'smooth' });">
+      Explore My Journey
+    </button>
+  </div>
+  <div class="hero-image">
+    <img src="images/Dhiren_Gangani.jpg" alt="Dhiren Gangani" class="profile-img">
+  </div>
+
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
         <li><a href="#knowledge">Knowledge Base</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
-
+</section>
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>With over 7 years of experience in IT, I specialize in Oracle Data Integrator, OAC, OBIEE, and more. I’ve led teams, built dashboards, and earned multiple awards for excellence.</p>
-    </section>
-    <section id="timeline">
-        <h2>Career Timeline</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Oracle</h3>
-                <span>Nov 2022 – Present</span>
-                <p>FDI & OAC Consultant — Led multiple projects including Amplifon, ENI, SBI, and RISL with advanced
-                    analytics and dashboard development.</p>
-            </div>
-            <div class="timeline-item">
-                <h3>Tata Technologies</h3>
-                <span>Jun 2021 – Nov 2022</span>
-                <p>OAC Developer — Supported ELT and OAC development for Honda Vietnam, including SQL procedures and ODI
-                    enhancements.</p>
-            </div>
-            <div class="timeline-item">
-                <h3>L&T Infotech (LTI)</h3>
-                <span>Sep 2018 – Jun 2021</span>
-                <p>OBIEE & ODI Consultant — Delivered BI solutions, handled Informatica and OBIEE environments, and led
-                    Synonym Switch project.</p>
-            </div>
-        </div>
-    </section>
+      <p>With over 7 years of experience in IT, I specialize in Oracle Data Integrator, Oracle Analytics Cloud (OAC), Fusion Data Intelligence, OBIEE, BI Publisher, Informatica/DAC, with a strong foundation in data warehousing concepts and best practices. Successfully implemented and managed end to end life cycle of analytical solutions, designed and developed BI systems and ETL components.As an AI Generalist, I hold certifications in OCI GenAI, Outskills AI Mastermind, AI Agent Studio Foundation, and Oracle AI Vector Search. I’ve worked closely with clients from onsites as well, and earned multiple appreciations, awards and recognition from both clients and organizations. I’ve led a team for 2 projects, consistently delivering under tight deadlines with a proactive, creative, and focused approach, backed by strong interpersonal and communication skills for effective client engagement.</p></section>
+<section id="career" class="career-timeline">
+<h2 class="section-title">Career Timeline</h2>
+<div class="blue-line"></div>
+  <div class="career-entry">
+    <img src="images/oracle_logo.png" alt="Oracle" class="company-logo">
+    <div class="career-details">
+      <h3>Oracle</h3>
+      <p><strong>Senior Consultant</strong> | Nov 2022 – Present</p>
+      <ul>
+        <li>Led analytics projects for Amplifon, ENI, SBI, and RISL</li>
+        <li>Developed advanced dashboards using FDI, OAC, BIP. Developed ETL Solutions</li>
+      </ul>
+    </div>
+  </div>
+  <div class="career-entry">
+    <img src="images/tata_logo.png" alt="Tata Technologies" class="company-logo">
+    <div class="career-details">
+      <h3>Tata Technologies</h3>
+      <p><strong>Solution Developer</strong> | Jun 2021 – Nov 2022</p>
+      <ul>
+        <li>Supported ELT and OAC development for Honda Vietnam Customer</li>
+        <li>Enhanced SQL procedures and ODI Loadplans</li>
+      </ul>
+    </div>
+  </div>
+  <div class="career-entry">
+    <img src="images/lti_logo.png" alt="L&T Infotech" class="company-logo">
+    <div class="career-details">
+      <h3>L&T Infotech (LTI)</h3>
+      <p><strong>Data Engineer</strong> | Sep 2018 – Jun 2021</p>
+      <ul>
+        <li>Delivered BI solutions using OBIEE and Informatica</li>
+        <li>Led Synonym Switch project and ODI integrations</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="achievements" class="achievements-section">
+  <h2 class="section-title">Achievements & Certifications</h2>
+  <div class="blue-line"></div>
+
+  <div class="slider-wrapper">
+    <div class="slider-track">
+      <img src="images/oracle_award2.png" alt="Oracle Award 2">
+      <img src="images/oracle_award1.png" alt="Oracle Award 1">
+      <img src="images/tata_award.png" alt="Tata Award">
+      <img src="images/lti_award.png" alt="LTI Award">
+
+      <!-- Duplicate images for seamless loop -->
+      <img src="images/oracle_award2.png" alt="Oracle Award 2">
+      <img src="images/oracle_award1.png" alt="Oracle Award 1">
+      <img src="images/tata_award.png" alt="Tata Award">
+      <img src="images/lti_award.png" alt="LTI Award">
+    </div>
+  </div>
+</section>
     <section id="projects">
       <h2>Featured Projects</h2>
       <div class="project-card">Amplifon – Fusion Data Intelligence</div>
-      <div class="project-card">ENI – Contract Generation App</div>
+      <div class="project-card">ENI – VBCS Contract Generation App with BIP Reporting</div>
       <div class="project-card">SBI – OAC-OARM Dashboard</div>
     <div class="project-grid">
   <div class="project-card">
     <h3>Amplifon – Fusion Data Intelligence</h3>
     <p><strong>Role:</strong> FDI Consultant</p>
     <p><strong>Tools:</strong> Fusion Data Intelligence, ADW</p>
-    <p>Built dashboards for HCM Workforce, developed SQL views, KPI logic, and led UAT.</p>
+    <p>Built dashboards for HCM Workforce such as Attrition,New Hires, Composition etc. developed SQL views, KPI logic, and led UAT and go-live.</p>
   </div>
 
   <div class="project-card">
-    <h3>ENI – Contract Generation App</h3>
-    <p><strong>Role:</strong> OAC Consultant</p>
+    <h3>ENI – VBCS Contract Generation App with BIP Reporting</h3>
+    <p><strong>Role:</strong> OAC Lead</p>
     <p><strong>Tools:</strong> OAC Publisher, Oracle DB</p>
-    <p>Led reporting efforts for 70+ contract templates using employee data from HCM.</p>
+    <p>Led Analytics delivery for 70+ BIP contract reports of Employment, Leave Agreements, Transfers etc with data from HCM and VBCS Extension application.</p>
   </div>
 
   <div class="project-card">
@@ -83,9 +123,9 @@
 
   <div class="project-card">
     <h3>RISL – IFMS 3.0 Migration</h3>
-    <p><strong>Role:</strong> ODI Consultant</p>
+    <p><strong>Role:</strong> ODI Lead</p>
     <p><strong>Tools:</strong> ODI, GoldenGate, PL/SQL</p>
-    <p>Led data migration and module development; mentored team and supported hiring.</p>
+    <p>Led Data migration for Employee, Pension module for Rajasthan gov data and mentored team and supported hiring for customer.</p>
   </div>
 
   <div class="project-card">
@@ -115,17 +155,15 @@
             </div>
 
             <div class="knowledge-entry">
-                <h3>Using Chart.js for Skill Visualization</h3>
+                <h3>BI Publisher Performance tunning after re-build from Oracle6i to OAS</h3>
                 <span class="entry-meta">01 Oct 2025 · #JavaScript #ChartJS</span>
-                <p>Integrated radar charts to show skill proficiency. Learned how to customize axes, colors, and tooltips
-                    for better UX.</p>
+                <p>The customer re-created with similar logic of report from Oracle 6i to OAS, which initially resulted in a prolonged load time of approximately 12–15 minutes.conducted comprehensive performance tuning by redesigning the BIP data model, optimizing dataset structures, and implementing strategic indexing. These enhancements successfully reduced the report execution time to under 2 minutes, significantly improving efficiency and user experience</p>
             </div>
 
             <div class="knowledge-entry">
-                <h3>Fusion Analytics: Creating Custom Measures</h3>
+                <h3>Fusion Analytics: Creating Custom NewHire Measure</h3>
                 <span class="entry-meta">30 Sep 2025 · #FDI #Analytics</span>
-                <p>Explored how to build custom KPIs using SQL views and SME extensions. Documented best practices for
-                    dashboard alignment.</p>
+                <p>Explored how to build custom KPIs using SQL views and SME extensions.</p>
             </div>
         </div>
     </section>
@@ -136,13 +174,20 @@
     <div class="icon-overlay" id="iconOverlay"></div>
   </div>
 </section>
-
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: dhireng110@gmail.com</p>
-      <p>LinkedIn | GitHub | Resume</p>
-    </section>
+    <section id="contact" class="contact-section">
+  <h2>Contact Me</h2>
+  <div class="contact-links">
+    <a href="https://www.linkedin.com/in/dhiren-gangani-420a85138/" target="_blank" rel="noopener noreferrer">
+      <img src="images/linkedin.png" alt="LinkedIn" class="icon"> LinkedIn
+    </a>
+    <a href="https://github.com/Dhireng110" target="_blank" rel="noopener noreferrer">
+      <img src="images/git.png" alt="GitHub" class="icon"> GitHub
+    </a>
+    <a href="resume.pdf" download>
+      <img src="images/resume.png" alt="Resume" class="icon"> Download Resume
+    </a>
+  </div>
+</section>
   </main>
 
   <footer>
