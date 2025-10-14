@@ -493,3 +493,22 @@ h2 {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-3200px); } /* 4 images x 800px */
 }
+
+.about-text {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.personal-details {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
