@@ -520,8 +520,8 @@ h2 {
   margin-top: 20px;
 }
 .cert-img-large {
-  width: 95%;
-  max-width: 1000px; /* previously 800px */
+  width: 90%;
+  max-width: 800px; /* previously 800px */
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
